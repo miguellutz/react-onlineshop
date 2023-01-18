@@ -11,12 +11,13 @@ $appbar-transition: scale(1.04);
 
 .appbar {
   display: flex;
+  // background-color: rgb(255, 255, 255);
+  border: 1px solid black;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   max-width: 500px;
-  border: 1px solid rgb(45, 45, 45);
   border-radius: 50px;
   padding: 10px;
   transition:
@@ -24,13 +25,13 @@ $appbar-transition: scale(1.04);
     transform 0.5s;
 
   &:hover {
-    border-color: $primaryColor;
     transform: $appbar-transition;
   }
 
   input {
     border-color: rgb(113, 113, 113);
     background-color: transparent;
+    border: 1px solid grey;
     text-align: center;
     border-radius: 30px;
     text-align: center;
@@ -40,7 +41,7 @@ $appbar-transition: scale(1.04);
     transition: transform 0.5s;
 
     &::placeholder {
-      color: white;
+      color: rgb(0, 0, 0);
     }
 
     &:hover {
