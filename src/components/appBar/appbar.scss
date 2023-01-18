@@ -1,0 +1,58 @@
+@import "../../index.scss";
+
+.appbar-container {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.appbar {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 30px;
+  transition: border-color 0.5s;
+
+  &:hover {
+    border-color: rgb(60, 60, 60);
+  }
+
+  input {
+    border-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    transition: background-color 0.5s;
+
+    &:focus {
+      background-color: transparent;
+      border: 1px solid $primaryColor;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+      border-color: $primaryColor
+    }
+  }
+
+  button {
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: $primaryColor;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $primaryColor;
+      color: white;
+    }
+  }
+
+}
