@@ -1,7 +1,10 @@
 @import "../../index.scss";
 
+$appbar-transition: scale(1.04);
+
+
 .appbar-container {
-  padding: 60px;
+  padding: 20px;
   display: flex;
   justify-content: center;
 }
@@ -11,14 +14,18 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  width: max-content;
+  width: 90%;
+  max-width: 500px;
   border: 1px solid rgb(45, 45, 45);
   border-radius: 50px;
   padding: 10px;
-  transition: border-color 0.5s;
+  transition:
+    border-color 0.5s,
+    transform 0.5s;
 
   &:hover {
     border-color: $primaryColor;
+    transform: $appbar-transition;
   }
 
   input {
@@ -30,20 +37,14 @@
     height: 40px;
     width: 100px;
     transition: background-color 0.5s;
+    transition: transform 0.5s;
 
     &::placeholder {
       color: white;
     }
 
-    &:focus {
-      background-color: transparent;
-      border: 1px solid $primaryColor;
-    }
-
     &:hover {
-      background-color: transparent;
-      color: white;
-      border-color: $primaryColor
+      transform: $appbar-transition;
     }
   }
 
