@@ -1,6 +1,6 @@
 $primaryColor: #4db5ff;
 $primaryBackgroundColor: black;
-$primaryTextColor: white;
+$primaryTextColor: rgb(0, 0, 0);
 
 
 body {
@@ -10,7 +10,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $primaryBackgroundColor;
   color: $primaryTextColor;
 }
 

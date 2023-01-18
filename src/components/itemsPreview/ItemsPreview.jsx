@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './itemsPreview.scss'
+
 import ItemPreview from '../itemPreview/ItemPreview'
 
 function ItemsPreview({items}) {

@@ -12,7 +12,7 @@ function App() {
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
       .then((data) => setItems(data))
-  })
+  }, [])
 
   return (
     <>
