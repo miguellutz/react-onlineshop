@@ -9,8 +9,8 @@ function AppBar() {
   return (
     <section className="appbar-container">
       <form action="/" method="get" className="appbar">
-        <AiFillAmazonCircle fontSize="50px" color="#4db5ff" />
-        <input type="text" placeholder='Search' />
+        <AiFillAmazonCircle fontSize="40px" color="#4db5ff" />
+        <input type="search" placeholder='Search' />
         <button type="submit"><AiOutlineSearch /></button>
       </form>
     </section>
