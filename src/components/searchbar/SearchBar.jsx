@@ -1,14 +1,14 @@
 import React from 'react'
 import { AiFillAmazonCircle, AiOutlineSearch } from 'react-icons/ai'
 
-import './appbar.scss'
+import './searchbar.scss'
 import '../../index.scss'
 
 
-function AppBar() {
+function SearchBar() {
   return (
-    <section className="appbar-container">
-      <form action="/" method="get" className="appbar">
+    <section className="searchbar-container">
+      <form action="/" method="get" className="searchbar">
         <AiFillAmazonCircle fontSize="40px" color="#4db5ff" />
         <input type="search" placeholder='Search' />
         <button type="submit"><AiOutlineSearch color="white" /></button>
@@ -17,4 +17,4 @@ function AppBar() {
   )
 }
 
-export default AppBar
+export default SearchBar

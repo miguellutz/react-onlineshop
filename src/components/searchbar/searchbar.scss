@@ -1,16 +1,16 @@
 @import "../../index.scss";
 
-$appbar-transition: scale(1.04);
+$searchbar-transition: scale(1.04);
 $border-color: rgb(57, 57, 57);
 
 
-.appbar-container {
+.searchbar-container {
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 
-.appbar {
+.searchbar {
   display: flex;
   // background-color: rgb(255, 255, 255);
   border: 1px solid $border-color;
@@ -26,7 +26,7 @@ $border-color: rgb(57, 57, 57);
     transform 0.5s;
 
   &:hover {
-    transform: $appbar-transition;
+    transform: $searchbar-transition;
     border-color: $primaryColor;
 
     input {
@@ -54,7 +54,7 @@ $border-color: rgb(57, 57, 57);
     }
 
     &:hover {
-      transform: $appbar-transition;
+      transform: $searchbar-transition;
     }
   }
 
