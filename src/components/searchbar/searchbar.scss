@@ -2,6 +2,7 @@
 
 $searchbar-transition: scale(1.04);
 $border-color: rgb(57, 57, 57);
+$border-radius: 50px;
 
 
 .searchbar-container {
@@ -14,12 +15,12 @@ $border-color: rgb(57, 57, 57);
   display: flex;
   // background-color: rgb(255, 255, 255);
   border: 1px solid $border-color;
+  border-radius: $border-radius;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   max-width: 500px;
-  border-radius: 50px;
   padding: 10px;
   transition:
     border-color 0.5s,

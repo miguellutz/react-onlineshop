@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 
 import SearchBar from './components/searchbar/SearchBar'
 import ItemsPreview from './components/itemsPreview/ItemsPreview'
+import Navbar from './components/navbar/Navbar'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <>
       <SearchBar />
       <ItemsPreview items={items} />
+      <Navbar />
     </>
   );
 }
