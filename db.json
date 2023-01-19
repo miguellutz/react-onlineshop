@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/zfVMdpn/macbook.jpg",
+      "title": "MacBook Pro 16\" 512gb",
+      "price": 2799.99,
+      "rating": {
+        "rate": 4.9,
+        "count": 145
+      },
+      "description": "Excellent notebook"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/37TT5t7/ipad.jpg",
+      "title": "iPad Pro 11\" 256gb with Apple Pen",
+      "price": 1199.99,
+      "rating": {
+        "rate": 4.8,
+        "count": 230
+      },
+      "description": "Excellent iPad"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/CzY8PsJ/airpods.jpg",
+      "title": "AirPods Pro 3rd Generation",
+      "price": 299.99,
+      "rating": {
+        "rate": 4.9,
+        "count": 368
+      },
+      "description": "Excellent Earphones"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/0nxf2F6/iphone.jpg",
+      "title": "iPhone 13 128gb Midnight Blue",
+      "price": 999.99,
+      "rating": {
+        "rate": 4.7,
+        "count": 454
+      },
+      "description": "Excellent Smartphone"
+    }
+  ]
+}
