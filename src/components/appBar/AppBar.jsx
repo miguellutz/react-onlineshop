@@ -11,7 +11,7 @@ function AppBar() {
       <form action="/" method="get" className="appbar">
         <AiFillAmazonCircle fontSize="40px" color="#4db5ff" />
         <input type="search" placeholder='Search' />
-        <button type="submit"><AiOutlineSearch color="black" /></button>
+        <button type="submit"><AiOutlineSearch color="white" /></button>
       </form>
     </section>
   )

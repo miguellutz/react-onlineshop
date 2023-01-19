@@ -1,6 +1,7 @@
 @import "../../index.scss";
 
 $appbar-transition: scale(1.04);
+$border-color: rgb(57, 57, 57);
 
 
 .appbar-container {
@@ -12,7 +13,7 @@ $appbar-transition: scale(1.04);
 .appbar {
   display: flex;
   // background-color: rgb(255, 255, 255);
-  border: 1px solid black;
+  border: 1px solid $border-color;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
@@ -26,10 +27,18 @@ $appbar-transition: scale(1.04);
 
   &:hover {
     transform: $appbar-transition;
+    border-color: $primaryColor;
+
+    input {
+      &::placeholder {
+        color: white;
+      }
+    }
   }
 
   input {
-    border-color: rgb(113, 113, 113);
+    border-color: $border-color;
+    padding: 0;
     background-color: transparent;
     border: 1px solid grey;
     text-align: center;
@@ -41,7 +50,7 @@ $appbar-transition: scale(1.04);
     transition: transform 0.5s;
 
     &::placeholder {
-      color: rgb(0, 0, 0);
+      color: $border-color;
     }
 
     &:hover {
