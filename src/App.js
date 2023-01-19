@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 
-import AppBar from './components/appBar/AppBar'
+import SearchBar from './components/searchbar/SearchBar'
 import ItemsPreview from './components/itemsPreview/ItemsPreview'
+import Navbar from './components/navbar/Navbar'
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
 
   return (
     <>
-      <AppBar />
+      <SearchBar />
       <ItemsPreview items={items} />
+      <Navbar />
     </>
   );
 }

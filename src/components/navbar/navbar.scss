@@ -1,0 +1,52 @@
+@import '../searchbar/searchbar.scss';
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: max-content;
+  border: 1px solid $primaryColor;
+  border-radius: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 40px;
+  backdrop-filter: blur(10px);
+
+  .active {
+    color: $primaryColor;
+
+    svg {
+      border-color: white;
+    }
+  }
+
+  a {
+    font-size: 30px;
+    color: rgb(229, 229, 229);
+    padding: 5px;
+
+    svg {
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 40px;
+    }
+
+    * {
+      transition: color 0.9s;
+      transition: border-color 1s;
+    }
+
+    *:hover {
+      color: $primaryColor;
+      border-color: white;
+    }
+
+  }
+}
