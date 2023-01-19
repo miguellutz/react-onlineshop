@@ -9,7 +9,7 @@ function App() {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch('http://localhost:5000/items')
       .then(res => res.json())
       .then((data) => setItems(data))
   }, [])
