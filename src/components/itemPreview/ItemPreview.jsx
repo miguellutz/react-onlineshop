@@ -16,7 +16,7 @@ function Item({item}) {
           <p className="item-rating__count">{item.rating.count}</p>
         </div>
         <p>{item.price}€</p>
-        <p>Kostenlose Lieferung für Prime Mitglieder</p>
+        <p className="item-shipping">Kostenlose Lieferung für Prime Mitglieder</p>
       </div>
     </div>
   )
