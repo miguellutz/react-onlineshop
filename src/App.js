@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Cart from './pages/Cart'
@@ -19,25 +20,16 @@ function App() {
       .then((data) => setItems(data))
   }, [])
 
-  let Component // when using custom Component to render out by name use capital letter (otherwise will try to render normal HTML element)
 
-  switch (window.location.pathname) { // not most scalable solution due to large switch statement and entire page refreshing when we switch pages
-    case "/":
-      Component = Home
-      break
-    case "/cart":
-      Component = Cart
-      break
-    case "/account":
-      Component = Account
-      break
-    default:
-  }
 
   return (
     <>
       <SearchBar />
-      <Component />
+      <Routes>
+        <Route path="/" element={Home} />
+        <Route path="/cart" element={Cart} />
+        <Route path="/account" element={Account} />
+      </Routes>
       {/* <ItemsPreview items={items} /> */}
       <Navbar />
     </>
