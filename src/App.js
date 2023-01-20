@@ -1,4 +1,9 @@
 import { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
+
+import Home from './pages/Home'
+import Cart from './pages/Cart'
+import Account from './pages/Account'
 
 import SearchBar from './components/searchbar/SearchBar'
 import ItemsPreview from './components/itemsPreview/ItemsPreview'
@@ -15,10 +20,17 @@ function App() {
       .then((data) => setItems(data))
   }, [])
 
+
+
   return (
     <>
       <SearchBar />
-      <ItemsPreview items={items} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/account" element={<Account />} />
+      </Routes>
+      {/* <ItemsPreview items={items} /> */}
       <Navbar />
     </>
   );
