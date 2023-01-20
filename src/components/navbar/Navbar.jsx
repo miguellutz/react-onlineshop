@@ -9,10 +9,18 @@ export default function Navbar() {
   return (
     <div className="nav-container">
       <nav className="nav">
-        <a href="/" className="active"><AiFillHome /></a>
-        <a href="/cart"><FaShoppingCart /></a>
-        <a href="/account"><BsFillPersonFill /></a>
+        <CustomLink href="/"><AiFillHome /></CustomLink>
+        <CustomLink href="/cart"><FaShoppingCart /></CustomLink>
+        <CustomLink href="/account"><BsFillPersonFill /></CustomLink>
       </nav>
     </div>
+  )
+}
+
+function CustomLink({ href, children, ...props }) {
+  const path = window.location.pathname
+
+  return (
+    <a href={href} className={path === href ? "active" : ""} {...props}>{children}</a>
   )
 }

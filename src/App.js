@@ -21,7 +21,7 @@ function App() {
 
   let Component // when using custom Component to render out by name use capital letter (otherwise will try to render normal HTML element)
 
-  switch (window.location.pathname) {
+  switch (window.location.pathname) { // not most scalable solution due to large switch statement and entire page refreshing when we switch pages
     case "/":
       Component = Home
       break
