@@ -1,5 +1,9 @@
-export default function Home({items}) {
+import ItemsPreview from '../components/itemsPreview/ItemsPreview'
+
+export default function Home({ items }) {
   return (
-    <h1>Home</h1>
-  )
+    <>
+      <ItemsPreview items={items} />
+    </>
+  );
 }

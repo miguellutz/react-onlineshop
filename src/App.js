@@ -6,7 +6,6 @@ import Cart from './pages/Cart'
 import Account from './pages/Account'
 
 import SearchBar from './components/searchbar/SearchBar'
-import ItemsPreview from './components/itemsPreview/ItemsPreview'
 import Navbar from './components/navbar/Navbar'
 
 
@@ -26,11 +25,10 @@ function App() {
     <>
       <SearchBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home items={items} />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/account" element={<Account />} />
       </Routes>
-      {/* <ItemsPreview items={items} /> */}
       <Navbar />
     </>
   );
