@@ -8,7 +8,7 @@ function ItemsPreview({items}) {
   return (
     <div className="itemsPreview-container">
       {items.map((item) => {
-        return <ItemPreview item={item} />
+        return <ItemPreview item={item} key={item.id} />
       })}
     </div>
   )
