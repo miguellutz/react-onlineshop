@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom' // most important changes --> all a tags become <Link /> and hrefs become "to"
+import { Link, useMatch, useResolvedPath } from 'react-router-dom' // most important changes --> all a tags become <Link /> and hrefs become "to"
 
 import './navbar.scss'
 
@@ -21,8 +21,13 @@ export default function Navbar() {
 
 function CustomLink({ to, children, ...props }) {
   // const path = window.location.pathname --> page does not refresh so this won't work
+  const resolvedPath = useResolvedPath(to)
+  // You can have absolute and relative paths /... or ... (go to ... page relative page already on)
+  // resolvedPath allows you to take relative or absolute path and combines it with path currently on to give full path you are accessing
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  // useMatch takes in string or object. With object you want to pass path and end: true to match the full url and not partial
 
   return (
-    <Link to={to} className={path === to ? "active" : ""} {...props}>{children}</Link>
+    <Link to={to} className={isActive ? "active" : ""} {...props}>{children}</Link>
   )
 }
