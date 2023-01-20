@@ -26,9 +26,9 @@ function App() {
     <>
       <SearchBar />
       <Routes>
-        <Route path="/" element={Home} />
-        <Route path="/cart" element={Cart} />
-        <Route path="/account" element={Account} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
       {/* <ItemsPreview items={items} /> */}
       <Navbar />

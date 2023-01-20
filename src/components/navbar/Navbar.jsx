@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom' // most important changes --> all a tags become <Link /> and hrefs become "to"
+
 import './navbar.scss'
 
 import { AiFillHome } from 'react-icons/ai'
@@ -9,18 +11,18 @@ export default function Navbar() {
   return (
     <div className="nav-container">
       <nav className="nav">
-        <CustomLink href="/"><AiFillHome /></CustomLink>
-        <CustomLink href="/cart"><FaShoppingCart /></CustomLink>
-        <CustomLink href="/account"><BsFillPersonFill /></CustomLink>
+        <CustomLink to="/"><AiFillHome /></CustomLink>
+        <CustomLink to="/cart"><FaShoppingCart /></CustomLink>
+        <CustomLink to="/account"><BsFillPersonFill /></CustomLink>
       </nav>
     </div>
   )
 }
 
-function CustomLink({ href, children, ...props }) {
-  const path = window.location.pathname
+function CustomLink({ to, children, ...props }) {
+  // const path = window.location.pathname --> page does not refresh so this won't work
 
   return (
-    <a href={href} className={path === href ? "active" : ""} {...props}>{children}</a>
+    <Link to={to} className={path === to ? "active" : ""} {...props}>{children}</Link>
   )
 }
