@@ -4,6 +4,9 @@ import { useParams } from 'react-router-dom'
 import CloseButton from '../utils/closeButton/CloseButton'
 import Loading from '../utils/loading/Loading'
 
+import QuantityButton from './QuantityButton'
+import AddToCartButton from './AddToCartButton'
+
 
 export default function Item() {
 
@@ -28,6 +31,28 @@ export default function Item() {
         <>
           <CloseButton />
           <div className="item-container" key={item.id}>
+            <div className="item-header">
+              <div className="item-title">
+                <h1>{item.title}</h1>
+              </div>
+              <div className="item-rating">
+                <span className="item-rating__rate">{item.rating.rate}</span>
+                <span className="item-rating__count">{item.rating.count}</span>
+              </div>
+            </div>
+            <div className="item-image">
+              <img src={item.image} alt={item.title} />
+            </div>
+            <div className="item-content">
+              <h2>{item.price}€</h2>
+              <p className="item-description">{item.description}</p>
+            </div>
+            <div className="item-actions">
+              <QuantityButton />
+              <AddToCartButton />
+            </div>
+          </div>
+          {/* <div className="item-container" key={item.id}>
             <div className="item-image">
               <img src={item.image} alt={item.title} />
             </div>
@@ -42,7 +67,7 @@ export default function Item() {
               <p>{item.price}€</p>
               <p className="item-shipping">Kostenlose Lieferung für Prime Mitglieder</p>
             </div>
-          </div>
+          </div> */}
         </>
       ) : (
         <Loading />

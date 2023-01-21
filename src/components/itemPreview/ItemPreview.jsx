@@ -6,7 +6,7 @@ import './itemPreview.scss'
 function Item({item}) {
   return (
     <Link to={`/${item.id}`} className="item-link">
-      <div className="item-container" key={item.id}>
+      <div className="itempreview-container" key={item.id}>
         <div className="item-image">
           <img src={item.image} alt={item.title} />
         </div>
