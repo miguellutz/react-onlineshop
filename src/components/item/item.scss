@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.item-container {
+  padding: 0 30px 120px;
+
+  .item-rating {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    .item-brand__container {
+      width: 80%;
+    }
+
+    .item-rating__container {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      font-size: 25px;
+    }
+  }
+
+  .item-image {
+    width: 100%;
+    padding: 20px 0;
+    height: 40vh;
+  }
+
+  .quantity-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .item-description {
+    padding: 20px 0;
+  }
+}

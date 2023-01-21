@@ -3,10 +3,10 @@
 .closeButton-container {
   display: flex;
   justify-content: flex-end;
-  padding: 10px 30px 0;
+  padding: 0 30px;
 }
 
 .closeButton {
   color: $primaryColor;
-  font-size: 40px;
+  font-size: 30px;
 }

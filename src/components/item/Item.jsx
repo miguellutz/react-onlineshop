@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
+import './item.scss'
+
 import CloseButton from '../utils/closeButton/CloseButton'
 import Loading from '../utils/loading/Loading'
 
 import QuantityButton from './QuantityButton'
-import AddToCartButton from './AddToCartButton'
+import AddToCartButton from '../utils/addtocartbutton/AddToCartButton'
 
 
 export default function Item() {
@@ -31,14 +33,17 @@ export default function Item() {
         <>
           <CloseButton />
           <div className="item-container" key={item.id}>
-            <div className="item-header">
-              <div className="item-title">
-                <h1>{item.title}</h1>
+            <div className="item-rating">
+              <div className="item-brand__containter">
+                <span className="item-brand">Brand: {item.brand}</span>
               </div>
-              <div className="item-rating">
+              <div className="item-rating__container">
                 <span className="item-rating__rate">{item.rating.rate}</span>
                 <span className="item-rating__count">{item.rating.count}</span>
               </div>
+            </div>
+            <div className="item-header">
+              <h1>{item.title}</h1>
             </div>
             <div className="item-image">
               <img src={item.image} alt={item.title} />
@@ -52,22 +57,6 @@ export default function Item() {
               <AddToCartButton />
             </div>
           </div>
-          {/* <div className="item-container" key={item.id}>
-            <div className="item-image">
-              <img src={item.image} alt={item.title} />
-            </div>
-            <div className="item-content">
-              <h1 className="item-title">
-                {item.title}
-              </h1>
-              <div className="item-rating">
-                <p className="item-rating__rate">{item.rating.rate}</p>
-                <p className="item-rating__count">{item.rating.count}</p>
-              </div>
-              <p>{item.price}€</p>
-              <p className="item-shipping">Kostenlose Lieferung für Prime Mitglieder</p>
-            </div>
-          </div> */}
         </>
       ) : (
         <Loading />
