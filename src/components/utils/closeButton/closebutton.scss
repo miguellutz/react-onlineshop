@@ -1,0 +1,12 @@
+@import '../../../index.scss';
+
+.closeButton-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 30px;
+}
+
+.closeButton {
+  color: $primaryColor;
+  font-size: 30px;
+}

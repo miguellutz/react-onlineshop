@@ -9,6 +9,7 @@
         "rate": 4.9,
         "count": 145
       },
+      "brand": "Apple",
       "description": "Excellent notebook"
     },
     {
@@ -20,6 +21,7 @@
         "rate": 4.8,
         "count": 230
       },
+      "brand": "Apple",
       "description": "Excellent iPad"
     },
     {
@@ -31,6 +33,7 @@
         "rate": 4.9,
         "count": 368
       },
+      "brand": "Apple",
       "description": "Excellent Earphones"
     },
     {
@@ -42,7 +45,20 @@
         "rate": 4.7,
         "count": 454
       },
+      "brand": "Apple",
       "description": "Excellent Smartphone"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/0s8bggK/homepod.jpg",
+      "title": "Homepod Mini",
+      "price": 399,
+      "rating": {
+        "rate": 4.4,
+        "count": 158
+      },
+      "brand": "Apple",
+      "description": "Great speaker with excellent base and a multitude of features"
     }
   ]
 }

@@ -1,4 +1,9 @@
-.item-container {
+.item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.itempreview-container {
   display: flex;
   gap: 30px;
   justify-content: space-between;
