@@ -6,6 +6,7 @@ import './item.scss'
 import CloseButton from '../utils/closeButton/CloseButton'
 import Loading from '../utils/loading/Loading'
 
+import StarRating from '../starrating/StarRating'
 import QuantityButton from './QuantityButton'
 import AddToCartButton from '../utils/addtocartbutton/AddToCartButton'
 
@@ -38,8 +39,8 @@ export default function Item() {
                 <span className="item-brand">Brand: {item.brand}</span>
               </div>
               <div className="item-rating__container">
-                <span className="item-rating__rate">{item.rating.rate}</span>
-                <span className="item-rating__count">{item.rating.count}</span>
+                <span className="item-rating__rate"><StarRating item={item} /></span>
+                <span className="item-rating__count">({item.rating.count})</span>
               </div>
             </div>
             <div className="item-header">
