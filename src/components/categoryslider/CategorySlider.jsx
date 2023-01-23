@@ -4,15 +4,16 @@ import { BsLaptop, BsTabletLandscape, BsDisplay, BsSpeaker } from 'react-icons/b
 import { CiHeadphones } from 'react-icons/ci'
 import { FiSmartphone } from 'react-icons/fi'
 
-export default function Categoryslider() {
+export default function Categoryslider({categories, handleClick}) {
+
   return (
     <div className='categories-container'>
-      <div className='category'><FiSmartphone />Phones</div>
-      <div className='category'><BsLaptop />Laptops</div>
-      <div className='category'><BsTabletLandscape />Tablets</div>
-      <div className='category'><BsDisplay />Displays</div>
-      <div className='category'><CiHeadphones />Headphones</div>
-      <div className='category'><BsSpeaker />Speakers</div>
+      <div className='category' onClick={handleClick}><FiSmartphone />Phones</div>
+      <div className='category' onClick={handleClick}><BsLaptop />Laptops</div>
+      <div className='category' onClick={handleClick}><BsTabletLandscape />Tablets</div>
+      <div className='category' onClick={handleClick}><BsDisplay />Displays</div>
+      <div className='category' onClick={handleClick}><CiHeadphones />Headphones</div>
+      <div className='category' onClick={handleClick}><BsSpeaker />Speakers</div>
     </div>
   );
 }

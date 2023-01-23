@@ -47,7 +47,7 @@
       "id": 4,
       "image": "https://i.ibb.co/0nxf2F6/iphone.jpg",
       "title": "iPhone 13 128gb Midnight Blue",
-      "category": "Smartphones",
+      "category": "Phones",
       "price": 999,
       "rating": {
         "rate": 4.7,
@@ -72,6 +72,32 @@
       "description": "Great speaker with excellent base and a multitude of features",
       "user": "miguel",
       "created_at": "20.01.2022"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Phones"
+    },
+    {
+      "id": 2,
+      "name": "Laptops"
+    },
+    {
+      "id": 3,
+      "name": "Tablets"
+    },
+    {
+      "id": 4,
+      "name": "Displays"
+    },
+    {
+      "id": 5,
+      "name": "Headphones"
+    },
+    {
+      "id": 6,
+      "name": "Speakers"
     }
   ]
 }
