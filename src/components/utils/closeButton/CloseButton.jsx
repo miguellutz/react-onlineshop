@@ -6,9 +6,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai'
 
 function CloseButton() {
   return (
-    <div className="closeButton-container">
-      <Link to="/" className="closeButton"><AiOutlineCloseCircle /></Link>
-    </div>
+    <Link to="/" className="closeButton"><AiOutlineCloseCircle /></Link>
   )
 }
 

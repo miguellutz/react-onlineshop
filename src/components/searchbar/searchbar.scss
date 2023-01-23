@@ -6,20 +6,19 @@ $border-radius: 50px;
 
 
 .searchbar-container {
-  padding: 20px;
+  padding: 20px 15px;
   display: flex;
   justify-content: center;
 }
 
 .searchbar {
   display: flex;
-  // background-color: rgb(255, 255, 255);
   border: 1px solid $border-color;
   border-radius: $border-radius;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   padding: 10px;
   transition:
@@ -60,7 +59,7 @@ $border-radius: 50px;
   }
 
   button {
-    border-color: $primaryColor;
+    border: 2px solid $primaryColor;
     border-radius: 50%;
     background-color: transparent;
     color: white;
