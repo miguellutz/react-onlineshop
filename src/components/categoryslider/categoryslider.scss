@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.categories-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  padding: 20px $primaryPadding 0;
+  gap: 10px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .category {
+    width: max-content;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid $primaryColor;
+    border-radius: 20px;
+    font-size: 12px;
+
+    svg {
+      margin: 0;
+    }
+  }
+}

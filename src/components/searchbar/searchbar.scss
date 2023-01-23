@@ -6,7 +6,7 @@ $border-radius: 50px;
 
 
 .searchbar-container {
-  padding: 20px 15px;
+  padding: 20px $primaryPadding 0 $primaryPadding;
   display: flex;
   justify-content: center;
 }
