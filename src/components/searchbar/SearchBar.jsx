@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillAmazonCircle, AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineSearch } from 'react-icons/ai'
 import { IoLogoPython } from 'react-icons/io'
 
 import './searchbar.scss'
