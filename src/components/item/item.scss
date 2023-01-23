@@ -1,37 +1,47 @@
 @import '../../index.scss';
 
 .item-container {
-  padding: 0 30px 120px;
-
-  .item-rating {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-
-    .item-brand__container {
-      width: 70%;
-    }
-
-    .item-rating__container {
-      width: 30%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .item-rating__count {
-        font-size: 10px;
-      }
-    }
-  }
+  padding: 0 20px 120px;
 
   .item-header {
     display: flex;
     justify-content: space-between;
+    padding: 5px 0;
     align-items: center;
 
+    .item-brand__container {
+      width: 50%;
+    }
+
+    .item-rating__container {
+      width: 50%;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      align-items: center;
+
+      .item-rating__ratings {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .item-rating__count {
+          font-size: 10px;
+          vertical-align: middle;
+        }
+      }
+
+      svg {
+        font-size: 25px;
+      }
+
+    }
+  }
+
+  .item-title {
     h1 {
+      font-size: 24px;
       margin: 0;
-      font-size: 25px;
     }
   }
 

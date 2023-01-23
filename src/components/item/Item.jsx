@@ -32,18 +32,20 @@ export default function Item() {
     <>
       {item ? (
         <>
-          <CloseButton />
           <div className="item-container" key={item.id}>
-            <div className="item-rating">
+            <div className="item-header">
               <div className="item-brand__containter">
                 <span className="item-brand">Brand: {item.brand}</span>
               </div>
               <div className="item-rating__container">
-                <span className="item-rating__rate"><StarRating item={item} /></span>
-                <span className="item-rating__count">({item.rating.count})</span>
+                <div className="item-rating__ratings">
+                  <span className="item-rating__rate"><StarRating item={item} /></span>
+                  <span className="item-rating__count">({item.rating.count})</span>
+                </div>
+                <CloseButton />
               </div>
             </div>
-            <div className="item-header">
+            <div className="item-title">
               <h1>{item.title}</h1>
             </div>
             <div className="item-image">

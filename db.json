@@ -4,6 +4,7 @@
       "id": 1,
       "image": "https://i.ibb.co/zfVMdpn/macbook.jpg",
       "title": "MacBook Pro 16\" 512gb",
+      "category": "Tech",
       "price": 2799.99,
       "rating": {
         "rate": 4.9,
@@ -16,6 +17,7 @@
       "id": 2,
       "image": "https://i.ibb.co/37TT5t7/ipad.jpg",
       "title": "iPad Pro 11\" 256gb with Apple Pen",
+      "category": "Tech",
       "price": 1199.99,
       "rating": {
         "rate": 4.8,
@@ -28,6 +30,7 @@
       "id": 3,
       "image": "https://i.ibb.co/CzY8PsJ/airpods.jpg",
       "title": "AirPods Pro 3rd Generation",
+      "category": "Tech",
       "price": 299.99,
       "rating": {
         "rate": 4.9,
@@ -40,6 +43,7 @@
       "id": 4,
       "image": "https://i.ibb.co/0nxf2F6/iphone.jpg",
       "title": "iPhone 13 128gb Midnight Blue",
+      "category": "Tech",
       "price": 999.99,
       "rating": {
         "rate": 4.7,
@@ -52,6 +56,7 @@
       "id": 5,
       "image": "https://i.ibb.co/0s8bggK/homepod.jpg",
       "title": "Homepod Mini",
+      "category": "Tech",
       "price": 399,
       "rating": {
         "rate": 4.4,
