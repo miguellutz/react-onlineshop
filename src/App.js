@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import Home from './pages/Home'
@@ -14,21 +13,11 @@ import Navbar from './components/navbar/Navbar'
 
 function App() {
 
-  const [items, setItems] = useState([])
-
-  useEffect(() => {
-    fetch('http://localhost:5000/items')
-      .then(res => res.json())
-      .then((data) => setItems(data))
-  }, [])
-
-
-
   return (
     <>
       <SearchBar />
       <Routes>
-        <Route path="/" element={<Home items={items} />} />
+        <Route path="/" element={<Home />} />
         <Route path="/:id" element={<Item />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/account" element={<Account />} />
