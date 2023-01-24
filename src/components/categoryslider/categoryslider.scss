@@ -21,9 +21,10 @@
     border: 1px solid $primaryColor;
     border-radius: 20px;
     font-size: 12px;
+  }
 
-    svg {
-      margin: 0;
-    }
+  .active {
+    background-color: $primaryColor;
+    color: black;
   }
 }

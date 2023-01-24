@@ -7,9 +7,19 @@ export default function Home() {
   const [items, setItems] = useState([]);
   const [categories, setCategories] = useState([]);
 
+  const [category, setCategory] = useState("");
+  const [categoryClicked, setCategoryClicked] = useState(false);
+
+  const resetCategory = () => {
+    setCategory("")
+    getAllItems()
+  }
+
   const handleCategoryClick = (e) => {
     const category = e.target.innerText;
-    getCategoryItems(category);
+    setCategory(category);
+    categoryClicked ? resetCategory() : getCategoryItems(category)
+    setCategoryClicked(!categoryClicked);
   }
 
   const getAllItems = () => {
@@ -25,7 +35,6 @@ export default function Home() {
   };
 
   const getCategoryItems = (category) => {
-    console.log(category);
     fetch(`http://localhost:5000/products?category=${category}`)
       .then((res) => res.json())
       .then((data) => setItems(data));
@@ -38,7 +47,7 @@ export default function Home() {
 
   return (
     <>
-      <CategorySlider categories={categories} handleClick={handleCategoryClick} />
+      <CategorySlider categories={categories} handleClick={handleCategoryClick} categoryClicked={categoryClicked} category={category} />
       <ItemsPreview items={items} />
     </>
   );

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "image": "https://i.ibb.co/zfVMdpn/macbook.jpg",
-      "title": "MacBook Pro 16\" 512gb",
+      "title": "MacBook Pro 16\" M1 Pro",
       "category": "Laptops",
       "price": 2799,
       "rating": {
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "image": "https://i.ibb.co/37TT5t7/ipad.jpg",
-      "title": "iPad Pro 11\" 256gb with Apple Pen",
+      "title": "iPad Pro 11\"",
       "category": "Tablets",
       "price": 1199,
       "rating": {
@@ -33,7 +33,7 @@
     {
       "id": 3,
       "image": "https://i.ibb.co/CzY8PsJ/airpods.jpg",
-      "title": "AirPods Pro 3rd Generation",
+      "title": "AirPods Pro 3rd Gen.",
       "category": "Headphones",
       "price": 299,
       "rating": {
@@ -46,7 +46,7 @@
     {
       "id": 4,
       "image": "https://i.ibb.co/0nxf2F6/iphone.jpg",
-      "title": "iPhone 13 128gb Midnight Blue",
+      "title": "iPhone 13",
       "category": "Phones",
       "price": 999,
       "rating": {
@@ -61,7 +61,7 @@
     {
       "id": 5,
       "image": "https://i.ibb.co/0s8bggK/homepod.jpg",
-      "title": "Homepod Mini",
+      "title": "Homepod Mini 2",
       "category": "Speakers",
       "price": 399,
       "rating": {
