@@ -24,7 +24,7 @@ function App() {
   };
 
   function resizeInput(e) {
-    e.target.style.width = ((e.target.value.length + 1) * 8) + 'px';
+    e.target.style.width = (e.target.value.length + 1) * 8 + "px";
   }
 
   const handleInputChange = (e) => {
@@ -32,7 +32,12 @@ function App() {
     resizeInput(e);
     setCategory("");
     const searchTerm = e.target.value;
+    // setSearchTerm(e.target.value);
     searchProducts(searchTerm);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
   };
 
   const resetCategory = () => {
@@ -72,7 +77,7 @@ function App() {
 
   return (
     <>
-      <SearchBar onChange={handleInputChange} />
+      <SearchBar onChange={handleInputChange} onSubmit={handleSubmit} />
       <Routes>
         <Route
           path='/'
