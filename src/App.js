@@ -17,8 +17,8 @@ function App() {
   const [category, setCategory] = useState("");
   const [categoryClicked, setCategoryClicked] = useState(false);
 
-  const searchProducts = (searchTerm) => {
-    fetch(`http://localhost:5000/products?q=${searchTerm}`)
+  const searchItems = (searchTerm) => {
+    fetch(`http://localhost:5000/items?q=${searchTerm}`)
       .then((res) => res.json())
       .then((data) => setItems(data));
   };
@@ -33,7 +33,7 @@ function App() {
     setCategory("");
     const searchTerm = e.target.value;
     // setSearchTerm(e.target.value);
-    searchProducts(searchTerm);
+    searchItems(searchTerm);
   };
 
   const handleSubmit = (e) => {
@@ -53,7 +53,7 @@ function App() {
   };
 
   const getAllItems = () => {
-    fetch("http://localhost:5000/products")
+    fetch("http://localhost:5000/items")
       .then((res) => res.json())
       .then((data) => setItems(data));
   };
@@ -65,7 +65,7 @@ function App() {
   };
 
   const getCategoryItems = (category) => {
-    fetch(`http://localhost:5000/products?category=${category}`)
+    fetch(`http://localhost:5000/items?category=${category}`)
       .then((res) => res.json())
       .then((data) => setItems(data));
   };

@@ -18,7 +18,7 @@ export default function Item() {
   let { id } = useParams();
 
   async function fetchItem(id) {
-    await fetch(`http://localhost:5000/products/${id}`)
+    await fetch(`http://localhost:5000/items/${id}`)
     .then((res) => res.json())
     .then((data) => setItem(data))
   }
