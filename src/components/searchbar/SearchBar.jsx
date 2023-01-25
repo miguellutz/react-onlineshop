@@ -7,6 +7,7 @@ import '../../index.scss'
 
 
 function SearchBar({ onChange }) {
+
   return (
     <section className="searchbar-container">
       <form action="/" method="get" className="searchbar">

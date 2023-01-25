@@ -25,7 +25,7 @@ export default function Item() {
 
   useEffect(() => {
     fetchItem(id);
-  }, [])
+  }, [id])
 
 
   return (
